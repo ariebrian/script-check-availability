@@ -41,8 +41,6 @@ def check_quota():
         available_sessions = []
         # Traverse the JSON structure
         sessions = data.get("data", {}).get("session", [])
-        sessions[0]['session_detail'][0]['available_quota'] = 5
-        sessions[4]['session_detail'][3]['available_quota'] = 10
         for session in sessions:
             session_label = session.get("label")
             details = session.get("session_detail", [])
