@@ -3,7 +3,7 @@ name: Check Quota Job
 on:
   schedule:
     # Run every 10 minutes
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
     # Allows manual triggering from the Actions tab
 
